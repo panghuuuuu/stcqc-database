@@ -1,0 +1,57 @@
+#result {
+  margin: 10px 200px;
+  min-height: 250px;
+}
+
+#result img {
+  float: left;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 5px solid black;
+  display: block;
+  margin-right: 20px;
+}
+#textresult {
+  text-align: justify;
+  display: block;
+}
+
+#result a {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: #152238;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: -3px;
+  display: block;
+}
+#result a:hover {
+  text-decoration: underline;
+  color: #2b436d;
+  transition: 0.2s;
+}
+
+#result h3 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+#result h4 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+
+  margin-top: -10px;
+}
+#result p {
+  font-family: "Karla", sans-serif;
+  color: black;
+}
+#divider {
+  width: 1100px;
+}
+
+@media screen and (max-width: 800px) {
+  #result {
+    margin: 10px 50px;
+  }
+}

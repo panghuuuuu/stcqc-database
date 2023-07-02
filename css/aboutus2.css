@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+/*global*/
+.container {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+/* How To Use */
+.how-container {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.left-container {
+  float: left;
+  height: auto;
+  max-width: 50%;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  max-width: 50%;
+  float: left;
+}
+
+.left-content img {
+  width: 90%;
+  height: auto;
+  padding-left: 90px;
+}
+
+.right-content {
+  max-width: 70%;
+}
+
+@media screen and (max-width: 999px) {
+  .how-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+  .left-container {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+  }
+  .right-container {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+  }
+  .left-content img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+  }
+  .left-content img {
+    padding-left: 0;
+  }
+
+  .right-content {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin: 10px auto 25px auto;
+    max-width: 100%;
+  }
+}
+
+/*content of the page*/
+#title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  color: #43536d;
+}
+p.test {
+  border: 1px solid #fffff;
+  white-space: nowrap;
+  overflow: scroll;
+  margin-right: 200px;
+}
+.text {
+  font-family: "Karla", sans-serif;
+}
+#highlight {
+  background-color: #fdc74c;
+  color: black;
+}
+
+/*button*/
+button {
+  display: inline;
+}
+
+#btn1 {
+  background-color: #1f2a3d;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  overflow: visible;
+}
+#btn1:hover {
+  background-color: transparent;
+  border: 3px solid #43536d;
+  border-radius: 8px;
+  color: #43536d;
+
+  box-shadow: 3px 6px 12px #1f2a3d;
+  transform: translateY(-9px);
+  transition-duration: 0.25s;
+
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+#btn2 {
+  background-color: transparent;
+  border: 3px solid #c29d2d;
+  border-radius: 8px;
+  color: #c29d2d;
+  padding: 5px 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  overflow: visible;
+}
+#btn2:hover {
+  background-color: #a88d38;
+  box-shadow: 3px 6px 12px #a88d38;
+  transform: translateY(-9px);
+  transition-duration: 0.25s;
+  color: white;
+  border: 3px solid transparent;
+  padding: 5px 8px;
+  text-decoration: none;
+}

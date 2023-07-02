@@ -1,0 +1,245 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+/*global*/
+.container {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+.content {
+  overflow: hidden;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*content of the page*/
+#uploadTitle {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+#uploadTitle h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: #152238;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+#pending {
+  background-color: transparent;
+  border: 3px solid #1f2a3d;
+  border-radius: 8px;
+  color: #1f2a3d;
+  padding: 5px 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+  float: right;
+  display: relative;
+}
+#pending:hover {
+  background-color: #43536d;
+  box-shadow: 3px 6px 12px #43536d;
+  transition-duration: 0.25s;
+  color: white;
+  border: 3px solid transparent;
+  padding: 5px 8px;
+}
+
+label {
+  padding: 12px 12px 12px 10px;
+  display: inline-block;
+  font-family: "Karla", sans-serif;
+}
+#subtext {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.heading {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.area {
+  float: left;
+  width: 75%;
+  margin-top: 15px;
+}
+
+.area input[type="email"],
+#newabstract {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+  background-color: #cfe2f3;
+  font-family: "Karla", sans-serif;
+}
+
+.area input[type="text"],
+#newabstract {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+  background-color: #cfe2f3;
+  font-family: "Karla", sans-serif;
+}
+
+.area input[type="url"],
+#newabstract {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+  background-color: #cfe2f3;
+  font-family: "Karla", sans-serif;
+}
+.area select {
+  width: 25%;
+  float: left;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background-color: #cfe2f3;
+  display: inline-flex;
+  font-family: "Karla", sans-serif;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  font-family: "Karla", sans-serif;
+}
+::placeholder {
+  color: #808080;
+  font-family: "Karla", sans-serif;
+}
+.form-inline {
+  display: inline-flex;
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+}
+.form-inline label {
+  padding: 5px 15px 10px 10px;
+  font-weight: bold;
+}
+
+.form-inline input[type="number"] {
+  width: 50%;
+  border-radius: 4px;
+  margin: 5px 10px 5px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: #cfe2f3;
+}
+.row input[type="submit"] {
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 63px;
+  outline: none;
+  font-family: "Karla", sans-serif;
+}
+.row input[type="submit"]:hover {
+  outline: none;
+  background-color: #cfe2f3;
+  font-family: "Karla", sans-serif;
+}
+
+#newyear {
+  padding-left: 60px;
+}
+
+#submit {
+  background-color: transparent;
+  border: 3px solid #c29d2d;
+  border-radius: 8px;
+  color: #c29d2d;
+  padding: 5px 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+#submit:hover {
+  background-color: #a88d38;
+  box-shadow: 3px 6px 12px #a88d38;
+  transition-duration: 0.25s;
+  color: white;
+  border: 3px solid transparent;
+  padding: 5px 8px;
+}
+
+/*screen size*/
+@media screen and (max-width: 600px) {
+  .row,
+  .heading,
+  .area,
+  input[type="text"] {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-inline {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    display: relative;
+  }
+  #newyear {
+    padding-left: 10px;
+    width: 40%;
+  }
+
+  #newnum {
+    width: 60%;
+  }
+
+  #newsubject {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  input[type="submit"] {
+    width: 50%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #cfe2f3;
+  }
+
+  label {
+    margin-top: 10px;
+  }
+}
